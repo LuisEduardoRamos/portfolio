@@ -1,11 +1,6 @@
 const submitButtonId = document.getElementById('submitButton');
 const errorMessage = document.getElementById('submitErrorMessage');
 
-const getMessageValue = () => {
-  const textArea = document.getElementById('message');
-  return textArea.value;
-};
-
 const showError = () => {
   errorMessage.classList.remove('d-none');
 };
@@ -15,18 +10,18 @@ const clearError = () => {
 };
 
 submitButtonId.addEventListener('click', () => {
-  const message = getMessageValue();
+  const message = document.getElementById('message').value;
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
   const phone = document.getElementById('phone').value;
   let error = false;
-  [(message, name, email, phone)].forEach((item) => {
+  [message, name, email, phone].forEach((item) => {
     if (item.length < 1) error = true;
   });
   if (error) {
     showError();
   } else {
     clearError();
-    //TODO REQUEST TO LR API
+    // TODO REQUEST TO LR API
   }
 });
