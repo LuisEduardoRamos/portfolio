@@ -2,11 +2,11 @@ const submitButtonId = document.getElementById('submitButton');
 const errorMessage = document.getElementById('submitErrorMessage');
 
 const showError = () => {
-  errorMessage.classList.remove('d-none');
+  errorMessage.classList.remove("d-none");
 };
 
 const clearError = () => {
-  errorMessage.classList.add('d-none');
+  errorMessage.classList.add("d-none");
 };
 
 submitButtonId.addEventListener('click', () => {
@@ -20,6 +20,7 @@ submitButtonId.addEventListener('click', () => {
   });
   if (error) {
     showError();
+    submitButtonId.disabled = false;
   } else {
     clearError();
     // TODO REQUEST TO LR API
