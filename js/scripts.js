@@ -1,28 +1,60 @@
-const submitButtonId = document.getElementById('submitButton');
-const errorMessage = document.getElementById('submitErrorMessage');
+// Theme toggle functionality
+const themeToggle = document.querySelector(".theme-toggle");
+const body = document.body;
 
-const showError = () => {
-  errorMessage.classList.remove("d-none");
-};
+// Check for saved theme preference or respect OS preference
+const savedTheme = localStorage.getItem("theme");
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-const clearError = () => {
-  errorMessage.classList.add("d-none");
-};
+if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+  body.classList.add("dark-theme");
+  themeToggle.textContent = "☀️";
+} else {
+  themeToggle.textContent = "🌙";
+}
 
-submitButtonId.addEventListener('click', () => {
-  const message = document.getElementById('message').value;
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const phone = document.getElementById('phone').value;
-  let error = false;
-  [message, name, email, phone].forEach((item) => {
-    if (item.length < 1) error = true;
-  });
-  if (error) {
-    showError();
-    submitButtonId.disabled = false;
+themeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark-theme");
+  if (body.classList.contains("dark-theme")) {
+    localStorage.setItem("theme", "dark");
+    themeToggle.textContent = "☀️";
   } else {
-    clearError();
-    // TODO REQUEST TO LR API
+    localStorage.setItem("theme", "light");
+    themeToggle.textContent = "🌙";
   }
+});
+
+// Language toggle functionality
+const langToggle = document.querySelector(".lang-toggle");
+let currentLang = "en";
+
+langToggle.addEventListener("click", () => {
+  currentLang = currentLang === "en" ? "es" : "en";
+  langToggle.textContent = currentLang === "en" ? "ES" : "EN";
+  updateLanguage(currentLang);
+});
+
+function updateLanguage(lang) {
+  document.querySelectorAll("[data-en]").forEach((element) => {
+    if (lang === "en") {
+      element.textContent = element.getAttribute("data-en");
+    } else {
+      element.textContent = element.getAttribute("data-es");
+    }
+  });
+}
+
+// Mobile menu toggle
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
 });

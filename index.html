@@ -1,179 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Servicios de Software</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Custom Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap icons-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer - Luis Ramos</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="d-flex flex-column h-100">
-    <main class="flex-shrink-0">
-      <!-- Navigation-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-        <div class="container px-5">
-          <a class="navbar-brand" href="index.html">
-            <span class="fw-bolder text-primary">LUIS RAMOS</span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="projects.html">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacto</a>
-              </li>
-            </ul>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <h1>Luis Ramos</h1>
           </div>
-        </div>
-      </nav>
-      <!-- Header-->
-      <header class="py-5">
-        <div class="container px-4 pb-5">
-          <div class="row gx-5 align-items-center">
-            <div class="col-xxl-5">
-              <!-- Header text content-->
-              <div class="text-center text-xxl-start">
-                <div
-                  class="badge bg-gradient-primary-to-secondary text-white mb-4"
-                >
-                  <div class="text-uppercase">
-                    Desarrollo &middot; Marketing &middot; Analytics
-                  </div>
-                </div>
-                <div class="fs-3 fw-light text-muted">
-                  Descubre cómo puedo ayudarte a alcanzar tus metas y potenciar tu crecimiento.
-                </div>
-                <h1 class="display-3 fw-bolder mb-5">
-                  <span class="text-gradient d-inline"
-                    >Potenciamos tu negocio hacia el éxito</span
-                  >
-                </h1>
-                <div
-                  class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3"
-                >
-                  <a
-                    class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
-                    href="services.html"
-                    >Servicios</a
-                  >
-                  <a
-                    class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
-                    href="projects.html"
-                    >Proyectos</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-7">
-              <!-- Header profile picture-->
-              <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                <div class="profile bg-gradient-primary-to-secondary">
-                  <img class="profile-img" src="assets/profile.png" alt="..." />
-                </div>
-              </div>
-            </div>
+          <ul class="nav-links">
+            <li>
+              <a href="#about" data-en="About" data-es="Sobre mí">About</a>
+            </li>
+            <li>
+              <a href="#projects" data-en="Projects" data-es="Proyectos"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#skills" data-en="Skills" data-es="Habilidades"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="#contact" data-en="Contact" data-es="Contacto"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="controls">
+            <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+            <button class="lang-toggle" aria-label="Toggle language">ES</button>
+            <button class="menu-toggle">☰</button>
           </div>
-        </div>
-      </header>
-      <!-- About Section-->
-      <section class="bg-light py-5">
-        <div class="container px-4">
-          <div class="row gx-5 justify-content-center">
-            <div class="col-xxl-8">
-              <div class="text-center my-5">
-                <h2 class="display-5 fw-bolder">
-                  <span class="text-gradient d-inline">Sobre Mi</span>
-                </h2>
-                <p class="lead fw-light mb-4">Mi nombre es Luis Ramos!</p>
-                <span>Desarrollador Web y Móvil | Analytics | Especialista en UI/UX
-                  | Servicios Web
-                </span>
-                <br><br/>
-                <p class="text-muted">
-                  ¡Saludos! Soy un apasionado del
-                  desarrollo de software con más de siete años de experiencia en
-                  el sector de Tecnologías de la Información. <br></br>Mi enfoque no solo
-                  radica en la creación de código eficiente, sino también en la
-                  creación de experiencias digitales cautivadoras.
-                </p>
-                <div class="d-flex justify-content-center fs-2 gap-4">
-                  <a class="text-gradient" href="https://twitter.com/LuisEdRamos"
-                    ><i class="bi bi-twitter"></i
-                  ></a>
-                  <a class="text-gradient" href="https://www.linkedin.com/in/luis-eduardo-ramos-413555142/"
-                    ><i class="bi bi-linkedin"></i
-                  ></a>
-                  <a class="text-gradient" href="https://t.co/nyWAgAzgzl"
-                    ><i class="bi bi-github"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-      <div class="container px-5">
-        <div
-          class="row align-items-center justify-content-between flex-column flex-sm-row"
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1 data-en="Hello, I'm Luis Ramos!" data-es="Hola, soy Luis Ramos!">
+          Hello, I'm Luis Ramos!
+        </h1>
+        <p
+          data-en="I'm a full-stack developer passionate about creating beautiful and functional web applications."
+          data-es="Soy un desarrollador full-stack apasionado por crear aplicaciones web atractivas y funcionales."
         >
-          <div class="col-auto">
-            <div class="small m-0">Copyright &copy; luisramos.com  2023</div>
-          </div>
-          <div class="col-auto">
-            <span class="mx-1">&middot;</span>
-            <a class="small" href="/contact.html">Contacto</a>
-            <span class="mx-1">&middot;</span>
-            <a
-              class="small"
-              href="https://www.flaticon.es/iconos-gratis/usuario"
-              title="Iconos creados por:"
-              >Iconos</a
+          I'm a full-stack developer passionate about creating beautiful and
+          functional web applications.
+        </p>
+        <a
+          href="#contact"
+          class="btn"
+          data-en="Get in Touch"
+          data-es="Contactame"
+          >Get in Touch</a
+        >
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title" data-en="About Me" data-es="Sobre Mí">
+          About Me
+        </h2>
+
+        <div class="about-content">
+          <div class="about-text">
+            <br />
+            <p
+              data-en="Fullstack Developer with 8 years of experience designing, developing, and maintaining scalable web applications. Expertise in Java SpringBoot and Node.js (Express) for backend systems, coupled with React/Vue.js for frontend development. Skilled in Android app delivery of high-quality, user-centric solutions"
+              data-es="Profesional con 8 años de experiencia en el diseño, desarrollo y mantenimiento de aplicaciones web y móviles escalables. Especializado en frameworks de Node.js (React, Vue.js, Express) y SpringBoot para desarrollo frontend y backend. Con sólidos conocimientos en desarrollo de aplicaciones Android, entregando soluciones de alta calidad centradas en el usuario"
             >
+              Fullstack Developer with 8 years of experience designing,
+              developing, and maintaining scalable web applications. Expertise
+              in Java SpringBoot and Node.js (Express) for backend systems,
+              coupled with React/Vue.js for frontend development. Skilled in
+              Android app delivery of high-quality, user-centric solutions
+            </p>
+            <br />
+            <p
+              data-en="When I'm not coding, you can find me fishing, reading tech blogs, or experimenting with new frameworks and libraries."
+              data-es="Cuando no estoy programando, me puedes encontrar haciendo pesca, leyendo blogs de tecnología o experimentando con nuevos frameworks y bibliotecas."
+            >
+              When I'm not coding, you can find me fishing, reading tech blogs,
+              or experimenting with new frameworks and libraries.
+            </p>
+          </div>
+          <div class="about-image">
+            <img class="img-fluid" src="./assets/profile.png" alt="developer" />
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title" data-en="Projects" data-es="Proyectos">
+          Projects
+        </h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                class="img-fluid"
+                src="./assets/ww-banner.png"
+                alt="developer"
+              />
+            </div>
+            <div class="project-info">
+              <h3 data-en="Worn Wear Patagonia" data-es="Worn Wear Patagonia">
+                Worn Wear Patagonia
+              </h3>
+              <p
+                data-en="A full-featured online store with shopping cart and payment integration."
+                data-es="Una tienda en línea con carrito de compras e integración de pagos."
+              >
+                A full-featured online store with shopping cart and payment
+                integration.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag gradient">React</span>
+                <span class="project-tag gradient">Node.js</span>
+                <span class="project-tag gradient">MongoDB</span>
+              </div>
+              <a
+                href="https://wornwear.patagonia.com/"
+                class="btn"
+                data-en="View Project"
+                data-es="Ver Proyecto"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="./assets/chrt-banner.png"
+                alt="Project 2"
+              />
+            </div>
+            <div class="project-info">
+              <h3 data-en="Carhartt Reworked" data-es="Carhartt Reworked">
+                Carhartt Reworked
+              </h3>
+              <p
+                data-en="A full-featured online store with shopping cart and payment integration."
+                data-es="Una tienda en línea con carrito de compras e integración de pagos."
+              >
+                A full-featured online store with shopping cart and payment
+                integration.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag gradient">React</span>
+                <span class="project-tag gradient">Express</span>
+                <span class="project-tag gradient">Postgres</span>
+              </div>
+              <a
+                href="https://reworked.carhartt.com/"
+                class="btn"
+                data-en="View Project"
+                data-es="Ver Proyecto"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="./assets/lsc-banner.png"
+                alt="Project 3"
+              />
+            </div>
+            <div class="project-info">
+              <h3
+                data-en="LEVIS Secondhand"
+                data-es="LEVIS Secondhand"
+              >
+                LEVIS Secondhand
+              </h3>
+              <p
+                data-en="A full-featured online store with shopping cart and payment integration."
+                data-es="Una tienda en línea con carrito de compras e integración de pagos."
+              >
+                A full-featured online store with shopping cart and payment
+                integration.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag gradient">JavaScript</span>
+                <span class="project-tag gradient">API</span>
+                <span class="project-tag gradient">CSS3</span>
+              </div>
+              <a
+                href="https://www.secondhand.levi.com/"
+                class="btn"
+                data-en="View Project"
+                data-es="Ver Proyecto"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title" data-en="Skills" data-es="Habilidades">
+          Skills
+        </h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3 data-en="Frontend" data-es="Frontend">Frontend</h3>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>HTML/CSS/JS</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>React</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Vue</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 data-en="Backend" data-es="Backend">Backend</h3>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Node.js</span>
+                <span>99%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 99%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Java</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>PHP</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 data-en="Tools" data-es="Herramientas">Tools</h3>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Git</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Docker</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>AWS/Azure</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>CI/CD</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title" data-en="Contact Me" data-es="Contacto">
+          Contact Me
+        </h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h3 data-en="Email" data-es="Correo">Email</h3>
+                <p>luiseduardoramosg@gmail.com</p>
+              </div>
+            </div>
+            <!-- <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div>
+                <h3 data-en="Phone" data-es="Teléfono">Phone</h3>
+                <p>+1 (123) 456-7890</p>
+              </div>
+            </div> -->
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h3 data-en="Location" data-es="Ubicación">Location</h3>
+                <p data-en="Culiacan, Sin." data-es="Culiacan, Sin.">
+                  Culiacan, Sin.
+                </p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name" data-en="Name" data-es="Nombre">Name</label>
+              <input type="text" id="name" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="email" data-en="Email" data-es="Correo">Email</label>
+              <input type="email" id="email" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="message" data-en="Message" data-es="Mensaje"
+                >Message</label
+              >
+              <textarea id="message" class="form-control" required></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn"
+              data-en="Send Message"
+              data-es="Enviar Mensaje"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="social-link">📘</a>
+          <a href="#" class="social-link">🐦</a>
+          <a href="#" class="social-link">👨‍💼</a>
+        </div>
+        <p
+          data-en="© 2023 Luis Ramos Portfolio. All rights reserved."
+          data-es="© 2023 Portafolio de Luis Ramos. Todos los derechos reservados."
+        >
+          © 2023 Luis Ramos Portfolio. All rights reserved.
+        </p>
+      </div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
